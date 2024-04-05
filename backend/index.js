@@ -164,7 +164,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const client = new MongoClient("mongodb://localhost:27017", {
+const client = new MongoClient("mongodb+srv://ujjwal3112:ljYWuz0jE73xIAW5@cluster0.tyixv4j.mongodb.net/game", {
   useUnifiedTopology: true,
 });
 
