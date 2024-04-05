@@ -5,7 +5,7 @@ function getorSetCache(key, cb) {
       if (data != null) return resolve(JSON.parse(data));
       const freshData = await cb();
       redisClient.setex(key, DEFAULT_EXPIRATION, JSON.stringify(freshData));
-      resolve(freshbata);
+      resolve(freshData);
     });
   });
 }
