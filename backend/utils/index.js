@@ -9,7 +9,7 @@ const generateRandomCards = () => {
   const randomDeck = [];
   for (let i = 0; i < 5; i++) {
     // const index = Math.random() * 4;
-    const index = 0; // temp
+    const index = Math.floor(Math.random() * 4); // temp
     randomDeck.push(CHARATERS[Math.floor(index)]);
   }
   return randomDeck;
