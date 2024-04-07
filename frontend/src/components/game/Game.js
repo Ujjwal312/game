@@ -32,6 +32,7 @@ const Game = (props) => {
       obj.gameCards = null;
       obj.hasDefuseCard = false;
       isCompleted = false;
+      obj.activeCard =null;
     } else if (openedCard === "Exploding kitten card 💣") {
       isCompleted = false;
       // doesn't have defused card
@@ -45,6 +46,7 @@ const Game = (props) => {
             )
           ) {
             obj.gameCards = null;
+            obj.activeCard =null;
           }
         }
       } else {
@@ -67,6 +69,7 @@ const Game = (props) => {
           )
         ) {
           obj.gameCards = null;
+          obj.activeCard =null;
         }
       }
     }
@@ -98,7 +101,7 @@ const Game = (props) => {
                             position: "absolute",
                             left: `${left}px`,
                             top: `${top}px`,
-                            backgroundColor: "black",
+                            backgroundColor: "yellow",
                           }}
                         >
                           {card}
